@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="autor" content="Adrián Gutiérrez Fernández">
+        <meta name="description" content="Formulario web para enviar las incidencias de clase">
+        <link rel="stylesheet" href="estilos.css" />
+        <title>Incidencia de clase</title>
+    </head>
+
+    <body>
+        <header class="cabecera">
+            <img src="\imagenes/IAT-LOGOTIPO.jpg" alt="Foto Alan Turing">
+        </header>
+
+        <main class="contenido-principal">
+            <form class="nueva-incidencia">
+                <fieldset>
+                    <legend>Nueva incidencia</legend>
+                    <div class="elemento-formulario">
+                        <label for="profesor">Profesor *:</label>
+                        <input type="text" name="profesor" id="profesor" required placeholder="Escribe tu nombre aquí.">
+                    </div>
+                    <div class="elemento-formulario">
+                        <label for="correo">Correo electrónico *:</label>
+                        <input type="email" name="correo" id="correo" required placeholder="Escribe tu correo aquí.">
+                    </div>
+                    <div class="elemento-formulario">
+                        <label for="departamento">Departamento *:</label>
+                        <select name="departamentos" id="departamentos">
+                            <option value="informatica">Informática</option>
+                            <option value="telecomunicaciones">Telecomunicaciones</option>
+                            <option value="secretaria">Secretaría</option>
+                          </select>
+                    </div>
+                    <div class="elemento-formulario">
+                        <label for="aula">Aula *:</label>
+                    </div>
+                    <div class="elemento-formulario">
+                        <label for="dia">Dia de la incidencia *:</label>
+                    </div>
+                    <div class="elemento-formulario">
+                        <label for="hora">Hora de la incidencia *:</label>
+                    </div>
+                    <div class="elemento-formulario">
+                        <label for="descripcion">Descripcion de la incidencia *:</label>
+                    </div>
+                    <div class="elemento-formulario">
+                        <label for="imagen">Imagen de la incidencia (opcional):</label>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+        
+    </body>
+
+
+</html>
